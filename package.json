@@ -4,7 +4,8 @@
   "description": "An image pre-loader that takes a bunch of image URLs and loads them into the browsers cache",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "node_modules/.bin/mocha --reporter nyan",
+    "cover": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha test/*"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   "homepage": "https://github.com/larry-dalmeida/dumb-image-preloader#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^4.0.1"
   }
 }

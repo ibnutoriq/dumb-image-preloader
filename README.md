@@ -1,5 +1,9 @@
 # Dumb Image Pre-loader
 
+[![Build Status](https://travis-ci.org/larry-dalmeida/dumb-image-preloader.svg?branch=master)](https://travis-ci.org/larry-dalmeida/dumb-image-preloader)
+
+[![Coverage Status](https://coveralls.io/repos/github/larry-dalmeida/dumb-image-preloader/badge.svg)](https://coveralls.io/github/larry-dalmeida/dumb-image-preloader)
+
 A tiny module that takes a bunch of image URLs and loads them into the browsers cache sequentially. When used responsibly and for a small number of optimized images it will reduce page load time for pages where the images are used.
 
 ## Installation
