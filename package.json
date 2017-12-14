@@ -1,0 +1,28 @@
+{
+  "name": "dumb-image-preloader",
+  "version": "0.1.0",
+  "description": "An image pre-loader that takes a bunch of image URLs and loads them into the browsers cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larry-dalmeida/dumb-image-preloader.git"
+  },
+  "keywords": [
+    "preload",
+    "pre-load",
+    "images"
+  ],
+  "author": "Larry D'Almeida <hello@larrydalmeida.com> (https://larrydalmeida.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larry-dalmeida/dumb-image-preloader/issues"
+  },
+  "homepage": "https://github.com/larry-dalmeida/dumb-image-preloader#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
