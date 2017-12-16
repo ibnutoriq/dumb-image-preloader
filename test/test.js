@@ -1,12 +1,25 @@
 'use strict';
 
-const expect = require('chai').expect;
-const dumbImagePreloader = require('../index');
+import { expect } from 'chai';
+import dumbImagePreloader from './../source/index';
 
-describe('#dumbImagePreloader', () => {
-  it('should return `false` if empty array or undefined is provided', () => {
-    const imgURLs = [];
-    expect(dumbImagePreloader(imgURLs)).to.equal(false);
-    expect(dumbImagePreloader()).to.equal(false);
+const MSG_REJECT = 'dumbImagePreloader: Parameter provided is not an array or is an empty array.';
+
+describe('dumbImagePreloader', () => {
+
+  it('should return a rejected promise when empty array is passed', () => {
+    const imageURLs = [];
+    return dumbImagePreloader(imageURLs)
+      .catch((err) => {
+        expect(err.message).to.equal(MSG_REJECT);
+      });
   });
+
+  it('should return a rejected promise when invalid parameter is passed', () => {
+    return dumbImagePreloader()
+      .catch((err) => {
+        expect(err.message).to.equal(MSG_REJECT);
+      });
+  });
+
 });
