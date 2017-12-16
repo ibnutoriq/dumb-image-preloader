@@ -1,6 +1,6 @@
 {
   "name": "dumb-image-preloader",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An image pre-loader that takes a bunch of image URLs and loads them into the browsers cache",
   "main": "./distribution/index.js",
   "scripts": {
