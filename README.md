@@ -13,6 +13,8 @@ A tiny module that takes a bunch of image URLs and loads them into the browsers 
 
   ```javascript
   import dumbImagePreloader from 'dumb-image-preloader';
+  // OR
+  //const dumbImagePreloader = require('dumb-image-preloader');
 
   const imageGroup0 = [
     'https://placeimg.com/640/480/nature/sepia',
